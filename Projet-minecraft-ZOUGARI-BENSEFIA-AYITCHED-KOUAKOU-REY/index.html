@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft - Accueil</title>
+    <link rel="stylesheet" href="style.css"> </head>
+    <link rel="icon" type="image/png" href="images/creeper.png">
+<body>
+
+    <header>
+        <h1><span><img src="images/creeper.png" alt="photo"></span>Minecraft</h1>
+        <ul class="navbar">
+            <li><a href="#hero">Acceuil</a></li>
+            <li><a href="#histoire">Histoire</a></li>
+            <li><a href="#video">Video</a></li>
+        </ul>
+
+        <ul class="login-navbar">
+            <li><a href="inscription.html">S'inscrire</a></li>
+            <li><a href="#login" id="login-btn">Connexion</a></li>
+        </ul>
+    </header>
+
+    <section class="hero" id="hero">
+        <h2>Bienvenue dans Minecraft</h2>
+        <p>Explore, construis et survie dans un monde sans limite.</p>
+        <a href="#histoire" class="btn"><span>⬇️</span> Découvrir l’histoire</a>
+    </section>
+
+    <section class="histoire" id="histoire">
+
+        <div class="Minecraft-definition">
+            <div class="text">
+                <h3>Qu’est-ce que Minecraft?</h3>
+                <p>Minecraft est un jeu composé de blocs, de créatures et d’une communauté. Vous pouvez survivre à la nuit ou construire une œuvre d'art, c'est à vous de choisir. Mais si l’idée d’explorer un nouveau monde tout seul vous semble inaccessible, rassurez-vous! Découvrons ce qu’est Minecraft!</p>
+            </div>
+            <img src="images/aventure.jpeg" alt="couche de soleil">
+        </div>
+
+        <div class="Minecraft-objectif">
+            <div class="text">
+                <h3>Quel est l’objectif dans Minecraft?</h3>
+                <p>Minecraft n’a pas de but précis et peut être joué comme vous le souhaitez! C’est pourquoi on l’appelle parfois un « jeu de bac à sable » : il y a beaucoup de choses à faire et beaucoup de façons de jouer. Si vous aimez être créatif, vous pouvez utiliser les blocs pour créer des objets à partir de votre imagination. Si vous vous sentez courageux, vous pouvez explorer le monde et relever des défis audacieux. Les blocs peuvent être cassés, façonnés, placés pour remodeler le paysage ou utilisés pour réaliser des créations fantastiques.</p>
+                <p>Les créatures peuvent être combattues ou devenir des amies, selon la façon dont vous jouez. Le monde de Minecraft permet de vivre des aventures épiques, des méditations tranquilles et tout autre chose. Vous pouvez même partager vos créations avec d’autres joueurs, ou jouer dans des mondes communautaires!</p>
+            </div>
+            <img src="images/couche de soleil.jpeg" alt="couche de soleil">
+        </div>
+
+    </section>
+
+    <section id="video" class="video-section">
+        <h2>CHASE THE SKIES WITH VIBRANT VISUALS | OFFICIAL TRAILER</h2>
+        <div class="video-container">
+        <iframe width="100%" height="500" 
+                src="https://www.youtube.com/embed/hX4itzvFxZo" 
+                title="CHASE THE SKIES WITH VIBRANT VISUALS | OFFICIAL TRAILER" 
+                frameborder="0" 
+                allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section class="login" id="login">
+        <div class="login-box">
+            <h2>Connexion</h2>
+            <form action="membre.html">
+              <input type="text" placeholder="Nom d'utilisateur" required>
+              <input type="password" placeholder="Mot de passe" required>
+              <button type="submit">Se connecter</button>
+            </form>
+            <p>Pas de compte ?
+            <a href="inscription.html">Inscris-toi</a></p>
+        </div>
+
+    </section>
+
+    <footer class="copyright">
+        <p>© 2025 - Projet Minecraft | Tous droits réservés</p>
+    </footer>
+
+
+</body>
+</html>

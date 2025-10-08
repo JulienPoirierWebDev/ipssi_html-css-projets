@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Les Sims 4 - À propos</title>
+  
+  <!-- CSS externe -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- CSS rapide pour l'image et le texte -->
+  <style>
+    /* Container principal */
+    .apropos-container {
+      display: flex;             /* Flex pour aligner image et texte */
+      align-items: center;       /* Centre l'image verticalement */
+      max-width: 1000px;
+      margin: 40px auto;
+      gap: 20px;
+    }
+
+    /* Image */
+    .apropos-img img {
+      width: 300px;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    /* Texte dans un rectangle blanc */
+    .apropos-text {
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      flex: 1;                  /* Prend tout l'espace restant */
+      min-width: 0;             /* Evite que le texte dépasse sur mobile */
+    }
+
+    /* Responsive : image au-dessus du texte sur mobile */
+    @media (max-width: 768px) {
+      .apropos-container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .apropos-img img {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar" aria-label="Navigation principale">
+      <div class="logo">
+        <img src="logo.png" alt="Logo Les Sims 4" title="Les Sims 4" style="height:50px;">
+      </div>
+      <ul class="nav-links">
+        <li><a href="accueil.html">Accueil</a></li>
+        <li><a href="a_propos.html" class="active">À propos</a></li>
+        <li><a href="galerie.html">Galerie</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li>
+          <a href="https://mysims4mods.com/fr/" target="_blank" rel="noopener" class="btn-externe">
+            Site officiel
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Section À propos -->
+  <section class="apropos">
+    <div class="apropos-container">
+      <!-- Image à gauche -->
+      <div class="apropos-img">
+        <img src="header-image.png" alt="Illustration des Sims">
+      </div>
+
+      <!-- Texte à droite -->
+      <div class="apropos-text">
+        <h1>À propos des Sims 4</h1>
+        <p>Les Sims 4 est un jeu de simulation de vie développé par Maxis et édité par Electronic Arts. Depuis sa sortie en 2014, il est devenu l’un des jeux les plus appréciés dans le monde grâce à son univers ouvert et sa liberté créative. Chaque joueur peut inventer ses propres histoires, construire des maisons uniques et guider la vie de ses Sims selon ses envies.</p>
+        <p>Le jeu propose une personnalisation poussée : de la création des Sims avec le mode "Créer un Sim" jusqu’à la décoration intérieure avec des milliers d’objets disponibles. De nombreuses extensions et packs de contenu viennent enrichir l’expérience, offrant des métiers, des loisirs, des destinations de voyage et même des animaux de compagnie.</p>
+        <p>L’un des grands atouts des Sims 4 est sa communauté très active. Des millions de joueurs partagent chaque jour leurs créations, qu’il s’agisse de personnages, de maisons ou de mods qui modifient le gameplay. Cette dimension communautaire rend le jeu encore plus vivant et évolutif.</p>
+        <p>Ce site a été conçu par des fans, pour les fans. Notre objectif est de partager des informations, des images, des astuces et des ressources afin d’aider les joueurs à profiter pleinement de leur expérience. Nous ne sommes pas affiliés officiellement à Electronic Arts, mais nous partageons la même passion pour cet univers unique et créatif.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pied de page -->
+  <footer>
+    <div class="footer-content">
+      <p>© 2025 Les Sims 4 Fans</p>
+      <p>Visitez le site officiel des Sims 4 : 
+        <a href="https://www.ea.com/games/the-sims/the-sims-4" target="_blank">EA Official Site</a>
+      </p>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/TheSims" target="_blank">
+          <img src="OIP (5).jpg" alt="Facebook">
+        </a>
+        <a href="https://twitter.com/TheSims" target="_blank">
+          <img src="TWX.webp" alt="Twitter">
+        </a>
+        <a href="https://www.instagram.com/thesims" target="_blank">
+          <img src="OIP (6).jpg" alt="Instagram">
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

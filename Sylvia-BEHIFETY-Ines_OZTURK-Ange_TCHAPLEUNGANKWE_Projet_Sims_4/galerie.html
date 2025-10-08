@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Les Sims 4 - Galerie</title>
+
+  <!-- CSS externe -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- CSS rapide pour la galerie -->
+  <style>
+    .galerie-container {
+      max-width: 1200px;
+      margin: 40px auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 0 20px;
+    }
+
+    .galerie-card {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .galerie-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    .galerie-card h3 {
+      margin: 0 0 10px 0;
+      font-size: 1.1em;
+      color: #333;
+    }
+
+    .galerie-card p {
+      margin: 0;
+      font-size: 0.9em;
+      color: #666;
+    }
+
+    /* Pour mobile */
+    @media (max-width: 768px) {
+      .galerie-container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar" aria-label="Navigation principale">
+      <div class="logo">
+        <img src="logo.png" alt="Logo Les Sims 4" title="Les Sims 4" style="height:50px;">
+      </div>
+      <ul class="nav-links">
+        <li><a href="accueil.html">Accueil</a></li>
+        <li><a href="a_propos.html">À propos</a></li>
+        <li><a href="galerie.html" class="active">Galerie</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li>
+          <a href="https://mysims4mods.com/fr/" target="_blank" rel="noopener" class="btn-externe">
+            Site officiel
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Section Galerie -->
+  <section class="galerie">
+    <div class="galerie-container">
+      <!-- Carte de création exemple -->
+     <!-- Carte de création exemple -->
+<div class="galerie-card">
+  <img src="cepzid-kids-sim-can-cook_01.webp" alt="Kids Sim can Cook">
+  <h3>Kids Sim can Cook</h3>
+  <p>par Cepzid in Petits mods</p>
+</div>
+
+      <div class="galerie-card">
+        <img src="simstrouble_13_1.webp" alt="by simstrouble in Adults">
+        <h3>BEADIE</h3>
+        <p>by simstrouble in Adults</p>
+      </div>
+      <div class="galerie-card">
+        <img src="jolibean_13_1.webp" alt="Jolibean in Bijoux">
+        <h3>Carmen Earrings</h3>
+        <p>par Jolibean in Bijoux</p>
+      </div>
+      <div class="galerie-card">
+        <img src="simiracle_3_1.webp" alt="Simiracle in Coats">
+        <h3>Layered Vest - Kids Version</h3>
+        <p>par Simiracle in Coats</p>
+      </div>
+      <div class="galerie-card">
+        <img src="simiracle_199_1.webp" alt="Kids Version by Simiracle">
+        <h3>Nightcrawler Sangria</h3>
+        <p>par Simiracle in Kids</p>
+      </div>
+      <div class="galerie-card">
+        <img src="simiracle_223_1.webp" alt="Simiracle in Kids">
+        <h3>LeahLillith Nila - Kids Version</h3>
+        <p>par Simiracle in Kids</p>
+      </div>
+      <div class="galerie-card">
+        <img src="yes.webp" alt="simiracle in Yeux"
+        <h3>Cathect Eyes</h3>
+        <p>par Simiracle in Yeux</p>
+      </div>
+      <div class="galerie-card">
+        <img src="cubersims_84_1.webp" alt="Cubersims in Adults"> 
+        <h3>Birksche Edit Curly Long Middle Part Recolored</h3>
+        <p>par Cubersims in Adults</p>
+      </div>
+       <div class="galerie-card">
+        <img src="wistfulcastle_107_1.webp" alt="Wistfulcastle in Full outfits"> 
+        <h3> Fifth Patron Gift</h3>
+        <p>par Wistfulcastle in Full outfits</p>
+      </div>
+      <div class="galerie-card">
+        <img src="nekochansimmer_158_1.webp" alt="Nekochansimmer in Tatooes"> 
+        <h3> Advent Calendar, Day 19: Nene Tattoo</h3>
+        <p>par Nekochansimmer in Tatooes</p>
+      </div>
+      <div class="galerie-card">
+        <img src="satterly_124_1.webp" alt="Satterlly in Dresses"> 
+        <h3> Summer Dress - Annette</h3>
+        <p>par Satterlly in Dresses</p>
+      </div>
+      <div class="galerie-card">
+        <img src="bustedpixels_26_1.webp" alt="Bustedpixels in Adults"> 
+        <h3> Fortnite Jumpsuit Ripley Hair Conversi</h3>
+        <p>par Bustedpixels in Adults</p>
+      </div>
+      <div class="galerie-card">
+        <img src="pluto-sims_groovy-a-wallpaper-_7382742_1.webp" alt="Pluto Sims in Mode construction"> 
+        <h3> Groovy - A Wallpaper</h3>
+        <p>par Pluto Sims in Mode construction</p>
+      </div>
+      <!-- Ajoute les autres créations ici de la même manière -->
+    </div>
+    <div class="galerie-card">
+        <img src="bluecraving_3rd-date-collection-monroe-dress_5790340_1.webp" alt="BlueCraving in Dresses"> 
+        <h3> 3Rd Date Collection - Monroe Dress
+</h3>
+        <p>par BlueCraving in Dresses</p>
+      </div>
+      <div class="galerie-card">
+        <img src="dskecht_medieval-interface-for-the-sims-4-july-27-2024-public-version-_9105416_1.webp" alt=""> 
+        <h3> Medieval Interface For The Sims 4 (July 27, 2024) [Public Version]
+</h3>
+        <p>par Dskecht in Graphismes & Interface</p>
+      </div>
+      <!-- Ajoute les autres créations ici de la même manière -->
+    </div>
+  </section>
+
+  <!-- Pied de page -->
+  <footer>
+    <div class="footer-content">
+      <p>© 2025 Les Sims 4 Fans</p>
+      <p>Visitez le site officiel des Sims 4 : 
+        <a href="https://www.ea.com/games/the-sims/the-sims-4" target="_blank">EA Official Site</a>
+      </p>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/TheSims" target="_blank">
+          <img src="OIP (5).jpg" alt="Facebook">
+        </a>
+        <a href="https://twitter.com/TheSims" target="_blank">
+          <img src="TWX.webp" alt="Twitter">
+        </a>
+        <a href="https://www.instagram.com/thesims" target="_blank">
+          <img src="OIP (6).jpg" alt="Instagram">
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

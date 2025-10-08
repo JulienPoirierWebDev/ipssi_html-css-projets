@@ -1,0 +1,119 @@
+@font-face {
+    font-family: 'modernwarfare';
+    src: url('fonts/modernwarfare.ttf') format('truetype');
+}
+
+body {
+    margin: 0;
+    font-family: 'modernwarfare', Arial, sans-serif;
+    background: url('https://images.frandroid.com/wp-content/uploads/2022/10/call-of-duty-modern-warfare-2-mwii-003-preorder-new-002.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #ddd;
+}
+
+#burger { display: none; }
+
+.burger {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 9999;
+    width: 40px;
+    height: 30px;
+    background: transparent;
+    cursor: pointer;
+    display: block;
+}
+
+.burger span {
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: #fff;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+.burger span:nth-of-type(1) { top: 0; transform-origin: left center; }
+.burger span:nth-of-type(2) { top: 50%; transform: translateY(-50%); transform-origin: left center; }
+.burger span:nth-of-type(3) { top: 100%; transform: translateY(-100%); transform-origin: left center; }
+
+#burger:checked + .burger span:nth-of-type(1) { transform: rotate(45deg); top: 0; left: 5px; }
+#burger:checked + .burger span:nth-of-type(2) { width: 0; opacity: 0; }
+#burger:checked + .burger span:nth-of-type(3) { transform: rotate(-45deg); top: 28px; left: 5px; }
+
+nav {
+    position: fixed;
+    top: 0;
+    left: -248px;
+    width: 200px;
+    height: 100%;
+    background: #000;
+    padding: 3rem 1.5rem;
+    transition: left 0.3s;
+    z-index: 9998;
+}
+#burger:checked ~ nav { left: 0; }
+
+nav ul { list-style: none; padding: 0; margin: 0; }
+nav li { margin: 1.5rem 0; }
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+nav a.active { color: #f0db4f; }
+nav a:hover { color: #f0db4f; }
+
+main {
+    max-width: 900px;
+    margin: 4rem auto;
+    padding: 2rem;
+    border-radius: 10px;
+    position: relative;
+}
+
+main h1, main h2 {
+    text-align: center;
+    color: #f0db4f;
+    text-decoration: underline;
+    text-decoration-color: #f0db4f;
+    text-decoration-thickness: 3px;
+    margin-bottom: 1.5rem;
+}
+
+main p {
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    color: #ddd;
+}
+
+main ul {
+    margin-left: 2rem;
+    list-style-type: disc;
+    color: #00bfff;
+}
+
+main ul li {
+    margin-bottom: 0.5rem;
+}
+
+main p strong, main p em {
+    color: #f0db4f;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.95rem;
+    color: #ccc;
+    background: rgba(0,0,0,0.6);
+    font-family: 'modernwarfare', Arial, sans-serif;
+    margin-top: 40px;
+}

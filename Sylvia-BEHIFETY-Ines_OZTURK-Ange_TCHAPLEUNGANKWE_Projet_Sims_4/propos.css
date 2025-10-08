@@ -1,0 +1,15 @@
+.apropos-content {
+  display: flex;            /* image à gauche, texte à droite */
+  align-items: flex-start;  /* aligner le texte en haut de l'image */
+  gap: 2cm;                 /* espace de 2 cm entre image et texte */
+  flex-wrap: wrap;          /* permet de passer l'image au-dessus sur petit écran */
+}
+
+.apropos-img {
+  max-width: 300px;   /* adapte la taille de l'image */
+  border-radius: 10px; /* pour arrondir les coins */
+}
+
+.apropos-text {
+  flex: 1;            /* prend le reste de l’espace disponible pour le texte */
+}
