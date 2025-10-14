@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+ 
+<h1 style="color:rgb(0, 255, 76), text aligne: center,"> FC26</h1>
+ 
+<body>
+    <h2><I>createur HUGO,alex,walid</I></h1>
+ 
+    <h3>bande d'annonce :</h3>
+    <a href="https://youtu.be/TSi0iJYSQ24" style="color:blue">
+        voir la bande d'annonce</a>
+ 
+ 
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FC26 - EA SPORTS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+       
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #000;
+            color: white;
+        }
+       
+        header {
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080"><rect fill="%23001a33" width="1920" height="1080"/></svg>');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            text-align: center;
+            padding: 150px 20px;
+            position: relative;
+            overflow: hidden;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+       
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(0, 26, 51, 0.8) 0%, rgba(0, 51, 102, 0.6) 100%);
+            z-index: 1;
+        }
+       
+        header > * {
+            position: relative;
+            z-index: 2;
+        }
+       
+        .logo-ea {
+            background: white;
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 30px;
+            font-weight: bold;
+            font-size: 2em;
+            color: #000;
+            animation: pulse 2s infinite;
+        }
+       
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+       
+        h1 {
+            font-size: 6em;
+            margin-bottom: 20px;
+            font-weight: 900;
+            letter-spacing: 15px;
+            text-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+            animation: slideIn 1s ease-out;
+        }
+       
+        .slogan {
+            font-size: 1.8em;
+            font-weight: 300;
+            margin-bottom: 40px;
+            animation: fadeIn 2s ease-in;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+       
+        @keyframes slideIn {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+       
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+       
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+       
+        .section {
+            padding: 80px 20px;
+            text-align: center;
+            background: linear-gradient(180deg, #001a33 0%, #003366 100%);
+        }
+       
+        .section:nth-child(even) {
+            background: linear-gradient(180deg, #003366 0%, #004d99 100%);
+        }
+       
+        .avantages {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 30px;
+            margin-top: 50px;
+        }
+       
+        .carte {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            width: 320px;
+            transition: all 0.3s ease;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+        }
+       
+        .carte:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 15px 50px rgba(0, 153, 255, 0.4);
+            border-color: rgba(0, 153, 255, 0.6);
+        }
+       
+        .carte h3 {
+            color: #00ccff;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+       
+        .carte p {
+            color: #fff;
+            font-size: 1.1em;
+        }
+       
+        .icone {
+            font-size: 4em;
+            margin-bottom: 20px;
+            filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
+        }
+       
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #00ccff 0%, #0099ff 100%);
+            color: white;
+            padding: 20px 60px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.4em;
+            font-weight: bold;
+            margin-top: 40px;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(0, 153, 255, 0.5);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+       
+        .cta-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 15px 50px rgba(0, 204, 255, 0.8);
+        }
+       
+        footer {
+            background-color: #000;
+            color: white;
+            text-align: center;
+            padding: 50px;
+            border-top: 3px solid #00ccff;
+        }
+       
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 50px;
+            gap: 40px;
+        }
+       
+        .stat {
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            min-width: 200px;
+        }
+       
+        .stat-number {
+            font-size: 4em;
+            font-weight: 900;
+            color: #00ccff;
+            text-shadow: 0 0 20px rgba(0, 204, 255, 0.8);
+        }
+       
+        .stat-label {
+            font-size: 1.3em;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-top: 10px;
+        }
+       
+        h2 {
+            font-size: 3em;
+            margin-bottom: 30px;
+            color: #00ccff;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            text-shadow: 0 0 20px rgba(0, 204, 255, 0.5);
+        }
+    </style>
+</head>
+    <header>
+        <div class="logo-ea">EA<br>SPORTS</div>
+        <h1>FC26</h1>
+        <p class="slogan">Le jeu ultime de football</p>
+        <a href="#infos" class="cta-button">Découvrir maintenant</a>
+    </header>
+ 
+    <div class="section" id="infos">
+        <div class="container">
+            <h2>Bienvenue dans FC26</h2>
+            <p style="font-size: 1.3em; max-width: 900px; margin: 0 auto; line-height: 1.8;">
+                Vivez l'expérience football ultime avec EA SPORTS FC 26. Des graphismes photoréalistes,
+                un gameplay révolutionnaire et tous vos joueurs préférés. Préparez-vous à entrer dans l'arène !
+            </p>
+           
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat-number">700+</div>
+                    <div class="stat-label">Clubs</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">19K+</div>
+                    <div class="stat-label">Joueurs</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">30+</div>
+                    <div class="stat-label">Ligues</div>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+    <div class="section">
+        <div class="container">
+            <h2>Fonctionnalités</h2>
+           
+            <div class="avantages">
+                <div class="carte">
+                    <div class="icone">🎮</div>
+                    <h3>Gameplay Next-Gen</h3>
+                    <p>Découvrez le football comme jamais auparavant avec des contrôles <a href="https://www.journaldufreenaute.fr/jeux-video-next-gen-a-ne-pas-rater/" style="color: violet;">ultra-réalistes</a> et fluides.</p>
+ 
+                </div>
+               
+                <div class="carte">
+                    <div class="icone">🏆</div>
+                    <h3>Mode Carrière</h3>
+                    <p>Menez votre équipe vers la gloire et devenez une légende <a href="https://wesportfr.com/ea-fc-26-les-5-grandes-nouveautes-du-mode-carriere/" style="color: violet;">du football mondial </a></p>
+                </div>
+               
+                <div class="carte">
+                    <div class="icone">🌍</div>
+                    <h3>Ultimate Team</h3>
+                    <p>Construisez l'équipe de vos rêves avec les plus grandes stars du <a href="https://www.futbin.com/news/articles/1583/fc-26-ultimate-team-deep-dive" style="color: violet;">football international </a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+    <div class="section">
+        <div class="container">
+            <h2>Pourquoi FC26 ?</h2>
+       
+            <div style="max-width: 900px; margin: 0 auto; text-align: left; font-size: 1.2em; line-height: 2.5;">
+                <p>⚡ <strong>Graphismes ultra-réalistes</strong> : HyperMotion 3 pour des animations parfaites</p>
+                <p>⚡ <strong>Intelligence artificielle avancée</strong> : Adversaires plus tactiques que jamais</p>
+                <p>⚡ <strong>Modes de jeu variés</strong> : Carrière, Ultimate Team, Volta, et plus encore</p>
+                <p>⚡ <strong>Cross-platform</strong> : Jouez avec vos amis sur toutes les plateformes</p>
+            </div>
+           
+            <a href="https://www.keysforgames.fr/games/steam-games/ea-sports-fc-26/" class="cta-button">Précommander maintenant        
+            </a>
+        </div>
+    </div>
+ 
+    <footer id="contact">
+        <h3 style="font-size: 2.5em; margin-bottom: 30px; color: #00ccff;">Rejoignez l'aventure</h3>
+        <p style="font-size: 1.2em;">🌐 Site officiel : www.ea.com/fc26</p>
+        <p style="font-size: 1.2em;">🎮 Disponible sur : PlayStation, Xbox, PC, Nintendo Switch</p>
+        <p style="font-size: 1.2em;">📅 Date de sortie : 2026</p>
+        <p style="font-size: 1.2em;">👍contact : fouzzy07</p>
+        <p style="margin-top: 40px; opacity: 0.7;">© 2025 EA SPORTS - Tous droits réservés</p>
+    </footer>
+</body>
+</html>
